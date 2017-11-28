@@ -1,5 +1,5 @@
 augroup MyAutoCmd
-	autocmd!
+    autocmd!
 augroup END
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -84,6 +84,7 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('scrooloose/nerdtree')
 call dein#add('rking/ag.vim')
 call dein#add('twitVim/twitvim')
+call dein#add('thinca/vim-quickrun')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
