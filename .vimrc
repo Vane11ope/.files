@@ -13,6 +13,7 @@ let g:deoplete#enable_at_startup = 1
 let twitvim_enable_python = 1
 let twitvim_force_ssl = 1
 let twitvim_count = 100
+let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
 
 set ignorecase
 set smartcase
