@@ -14,6 +14,12 @@ let twitvim_enable_python = 1
 let twitvim_force_ssl = 1
 let twitvim_count = 100
 let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+let g:quickrun_config = {
+\	'gcc' : {
+\		'cmdopt': '-lstdc++',
+\		'hook/time/enable' : 1,
+\	 }
+\}
 
 set ignorecase
 set smartcase
@@ -86,6 +92,7 @@ call dein#add('scrooloose/nerdtree')
 call dein#add('rking/ag.vim')
 call dein#add('twitVim/twitvim')
 call dein#add('thinca/vim-quickrun')
+call dein#add('tpope/vim-fugitive')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
