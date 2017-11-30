@@ -93,6 +93,7 @@ call dein#add('rking/ag.vim')
 call dein#add('twitVim/twitvim')
 call dein#add('thinca/vim-quickrun')
 call dein#add('tpope/vim-fugitive')
+call dein#add('scrooloose/syntastic')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
