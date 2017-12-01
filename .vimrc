@@ -6,7 +6,7 @@ autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,exc
 autocmd FileType python setl noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 syntax on
-  
+
 let mapleader="-"
 let g:mapleader="-"
 let g:deoplete#enable_at_startup = 1
@@ -44,6 +44,8 @@ set textwidth=0
 set t_vb=
 set novisualbell
 set tags=./tags;
+set list
+set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
 
 hi Pmenu ctermbg=8
 hi PmenuSel ctermbg=1
