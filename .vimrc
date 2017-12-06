@@ -64,6 +64,7 @@ nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 inoremap jj <Esc>
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 map <silent> <leader>e :NERDTreeToggle<cr>
+map <silent> <leader>f :TagbarToggle<cr>
 
 retab 4
 retab!
@@ -96,6 +97,7 @@ call dein#add('twitVim/twitvim')
 call dein#add('thinca/vim-quickrun')
 call dein#add('tpope/vim-fugitive')
 call dein#add('scrooloose/syntastic')
+call dein#add('majutsushi/tagbar')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
