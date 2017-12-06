@@ -65,6 +65,10 @@ inoremap jj <Esc>
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 map <silent> <leader>e :NERDTreeToggle<cr>
 map <silent> <leader>f :TagbarToggle<cr>
+map <silent> <leader>0 :set fdm=marker fmr={,} foldlevel=0<cr>
+map <silent> <leader>1 :set fdm=marker fmr={,} foldlevel=1<cr>
+map <silent> <leader>2 :set fdm=marker fmr={,} foldlevel=2<cr>
+map <silent> <leader>3 :set fdm=marker fmr={,} foldlevel=3<cr>
 
 retab 4
 retab!
