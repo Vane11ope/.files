@@ -72,6 +72,8 @@ retab!
 filetype plugin on
 filetype plugin indent on
 
+colors deus
+
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible
@@ -98,6 +100,8 @@ call dein#add('thinca/vim-quickrun')
 call dein#add('tpope/vim-fugitive')
 call dein#add('scrooloose/syntastic')
 call dein#add('majutsushi/tagbar')
+call dein#add('ajmwagar/vim-deus')
+call dein#add('vim-airline/vim-airline')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
