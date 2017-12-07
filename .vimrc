@@ -1,9 +1,6 @@
 augroup MyAutoCmd
     autocmd!
 augroup END
-autocmd FileType python setl autoindent
-autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-autocmd FileType python setl noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 syntax on
 
@@ -13,6 +10,9 @@ let g:deoplete#enable_at_startup = 1
 let twitvim_enable_python = 1
 let twitvim_force_ssl = 1
 let twitvim_count = 100
+let g:airline_theme='kolor'
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
 let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
 let g:quickrun_config = {
 \	'gcc' : {
@@ -20,7 +20,14 @@ let g:quickrun_config = {
 \		'hook/time/enable' : 1,
 \	 }
 \}
-let g:airline_theme='kolor'
+
+autocmd FileType python setl autoindent
+autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd FileType python setl noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd VimEnter * RainbowParenthesesToggle
+autocmd Syntax * RainbowParenthesesLoadRound
+autocmd Syntax * RainbowParenthesesLoadSquare
+autocmd Syntax * RainbowParenthesesLoadBraces
 
 set ignorecase
 set smartcase
@@ -108,6 +115,7 @@ call dein#add('majutsushi/tagbar')
 call dein#add('ajmwagar/vim-deus')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
+call dein#add('kien/rainbow_parentheses.vim')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
