@@ -20,6 +20,7 @@ let g:quickrun_config = {
 \		'hook/time/enable' : 1,
 \	 }
 \}
+let g:airline_theme='kolor'
 
 set ignorecase
 set smartcase
@@ -106,6 +107,7 @@ call dein#add('scrooloose/syntastic')
 call dein#add('majutsushi/tagbar')
 call dein#add('ajmwagar/vim-deus')
 call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
