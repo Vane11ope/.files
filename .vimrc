@@ -91,6 +91,9 @@ if &compatible
   set nocompatible
 endif
 
+" sosu_usa, whichwrap like emacs "
+set whichwrap=b,s,<,>,[,],h,l
+
 " Required:
 set runtimepath^=/home/vanellope/.cache/dein/repos/github.com/Shougo/dein.vim
 
