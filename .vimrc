@@ -95,10 +95,10 @@ endif
 set whichwrap=b,s,<,>,[,],h,l
 
 " Required:
-set runtimepath^=/home/vanellope/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath^=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-call dein#begin(expand('/home/vanellope/.cache/dein'))
+call dein#begin(expand('$HOME/.cache/dein'))
 
 " Let dein manage dein
 " Required:
