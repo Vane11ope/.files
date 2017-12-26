@@ -82,7 +82,6 @@ retab 4
 retab!
 
 filetype plugin on
-filetype plugin indent on
 
 colors deus
 
@@ -116,6 +115,7 @@ call dein#add('ajmwagar/vim-deus')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('kien/rainbow_parentheses.vim')
+call dein#add('davidhalter/jedi-vim')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
