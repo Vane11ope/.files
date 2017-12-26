@@ -20,6 +20,7 @@ let g:quickrun_config = {
 \		'hook/time/enable' : 1,
 \	 }
 \}
+let g:jedi#popup_select_first = 0
 
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
