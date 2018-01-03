@@ -27,6 +27,7 @@ e asm.linesright = true
 e asm.noisy = true
 e asm.offset = true
 e asm.section = true
+e asm.section.col = 11
 e asm.size = true
 e asm.slow = true
 e asm.stackptr = false
