@@ -33,7 +33,7 @@ e asm.slow = true
 e asm.stackptr = false
 e asm.symbol = false
 e asm.vars = true
-e asm.varsub = true
+e asm.varsub = false
 e asm.varxs = true
 e asm.xrefs = true
 
