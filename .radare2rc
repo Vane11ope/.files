@@ -32,10 +32,14 @@ e asm.size = true
 e asm.slow = true
 e asm.stackptr = false
 e asm.symbol = false
+e asm.trace = true
+e asm.tracespace = true
 e asm.vars = true
 e asm.varsub = false
 e asm.varxs = true
 e asm.xrefs = true
+
+e dbg.trace = true
 
 e graph.cmtright = true
 e graph.gv.current = true
