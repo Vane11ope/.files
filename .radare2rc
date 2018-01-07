@@ -48,3 +48,5 @@ e graph.nodejmps = true
 e graph.offset = true
 e graph.refs = true
 e graph.scroll = 15
+
+e io.cache = true
