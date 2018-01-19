@@ -39,10 +39,10 @@ set infercase
 set virtualedit=all
 set hidden
 set switchbuf=useopen
-set showmatch
+"set showmatch
 set matchtime=3
 set expandtab tabstop=4 softtabstop=4 shiftwidth=4
-set matchpairs& matchpairs+=<:>
+"set matchpairs& matchpairs+=<:>
 set backspace=indent,eol,start
 set nowritebackup
 set nobackup
