@@ -43,7 +43,7 @@ e dbg.trace = true
 
 e graph.cmtright = true
 e graph.gv.current = true
-e graph.layout = 1
+e graph.layout = 0
 e graph.nodejmps = true
 e graph.offset = true
 e graph.refs = true
