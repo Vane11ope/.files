@@ -41,7 +41,7 @@ set hidden
 set switchbuf=useopen
 set showmatch
 set matchtime=3
-set expandtab tabstop=4 softtabstop=4 shiftwidth=4
+set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
 set matchpairs& matchpairs+=<:>
 set backspace=indent,eol,start
 set nowritebackup
