@@ -86,6 +86,11 @@ filetype plugin on
 
 colors deus
 
+if executable('ag')
+	let g:ctrlp_use_caching=0
+	let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
+endif
+
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible
@@ -117,6 +122,7 @@ call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('kien/rainbow_parentheses.vim')
 call dein#add('davidhalter/jedi-vim')
+call dein#add('ctrlpvim/ctrlp.vim')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
