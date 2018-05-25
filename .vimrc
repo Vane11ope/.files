@@ -55,6 +55,7 @@ set novisualbell
 set tags=./tags;
 set list
 set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
+set rtp+=~/.fzf
 
 hi Pmenu ctermbg=8
 hi PmenuSel ctermbg=1
@@ -85,11 +86,6 @@ retab!
 filetype plugin on
 
 colors deus
-
-if executable('ag')
-	let g:ctrlp_use_caching=0
-	let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
-endif
 
 "dein Scripts-----------------------------
 if &compatible
@@ -122,7 +118,8 @@ call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('kien/rainbow_parentheses.vim')
 call dein#add('davidhalter/jedi-vim')
-call dein#add('ctrlpvim/ctrlp.vim')
+call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
+call dein#add('junegunn/fzf.vim')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
