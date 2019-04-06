@@ -22,9 +22,13 @@ let g:quickrun_config = {
 \}
 let g:jedi#popup_select_first = 0
 
+au BufRead,BufNewFile *.ui set filetype=xml
+
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType python setl noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType xml setl expandtab tabstop=1 shiftwidth=1 softtabstop=1
+autocmd FileType cpp setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd VimEnter * RainbowParenthesesToggle
 autocmd Syntax * RainbowParenthesesLoadRound
 autocmd Syntax * RainbowParenthesesLoadSquare
@@ -120,6 +124,7 @@ call dein#add('kien/rainbow_parentheses.vim')
 call dein#add('davidhalter/jedi-vim')
 call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 call dein#add('junegunn/fzf.vim')
+call dein#add('critiqjo/lldb.nvim')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
