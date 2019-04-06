@@ -75,6 +75,10 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
+nnoremap <silent> <A-e> :GtagsCursor<CR>
+nnoremap <silent> <A-h> :vsp<CR> :exe('Gtags '.expand('<cword>'))<CR>
+nnoremap <silent> <A-k> :vsp<CR> :exe('Gtags -r '.expand('<cword>'))<CR>
+
 inoremap jj <Esc>
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 map <silent> <leader>e :NERDTreeToggle<cr>
@@ -124,6 +128,7 @@ call dein#add('kien/rainbow_parentheses.vim')
 call dein#add('davidhalter/jedi-vim')
 call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 call dein#add('junegunn/fzf.vim')
+call dein#add('lighttiger2505/gtags.vim')
 call dein#add('critiqjo/lldb.nvim')
 
 if !has('nvim')
