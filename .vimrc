@@ -24,6 +24,8 @@ let g:jedi#popup_select_first = 0
 
 au BufRead,BufNewFile *.ui set filetype=xml
 
+autocmd FileType javascript setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType typescript setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType python setl noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
