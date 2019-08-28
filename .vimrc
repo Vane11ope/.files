@@ -6,7 +6,7 @@ syntax on
 
 let mapleader="-"
 let g:mapleader="-"
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 let twitvim_enable_python = 1
 let twitvim_force_ssl = 1
 let twitvim_count = 100
@@ -109,7 +109,7 @@ call dein#add('Shougo/dein.vim')
 " Add or remove your plugins here:
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
-call dein#add('Shougo/deoplete.nvim')
+"call dein#add('Shougo/deoplete.nvim')
 call dein#add('scrooloose/nerdtree')
 call dein#add('rking/ag.vim')
 call dein#add('twitVim/twitvim')
@@ -125,6 +125,7 @@ call dein#add('davidhalter/jedi-vim')
 call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 call dein#add('junegunn/fzf.vim')
 call dein#add('critiqjo/lldb.nvim')
+call dein#add('neoclide/coc.nvim', {'rev': 'release'})
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
