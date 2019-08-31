@@ -127,6 +127,8 @@ call dein#add('davidhalter/jedi-vim')
 call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
 call dein#add('junegunn/fzf.vim')
 call dein#add('critiqjo/lldb.nvim')
+call dein#add('leafgarland/typescript-vim')
+call dein#add('Quramy/tsuquyomi')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
