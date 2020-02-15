@@ -6,7 +6,7 @@ syntax on
 
 let mapleader="-"
 let g:mapleader="-"
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 let twitvim_enable_python = 1
 let twitvim_force_ssl = 1
 let twitvim_count = 100
@@ -25,7 +25,9 @@ let g:jedi#popup_select_first = 0
 au BufRead,BufNewFile *.ui set filetype=xml
 
 autocmd FileType javascript setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
-autocmd FileType typescript setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType typescript setl expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType html setl expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType css setl expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType python setl noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
@@ -111,7 +113,7 @@ call dein#add('Shougo/dein.vim')
 " Add or remove your plugins here:
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
-call dein#add('Shougo/deoplete.nvim')
+" call dein#add('Shougo/deoplete.nvim')
 call dein#add('scrooloose/nerdtree')
 call dein#add('rking/ag.vim')
 call dein#add('twitVim/twitvim')
@@ -119,6 +121,7 @@ call dein#add('thinca/vim-quickrun')
 call dein#add('tpope/vim-fugitive')
 call dein#add('vim-syntastic/syntastic')
 call dein#add('majutsushi/tagbar')
+call dein#add('hushicai/tagbar-javascript.vim')
 call dein#add('ajmwagar/vim-deus')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
@@ -129,6 +132,8 @@ call dein#add('junegunn/fzf.vim')
 call dein#add('critiqjo/lldb.nvim')
 call dein#add('leafgarland/typescript-vim')
 call dein#add('Quramy/tsuquyomi')
+call dein#add('rust-lang/rust.vim')
+call dein#add('neoclide/coc.nvim', {'rev':'release'})
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
